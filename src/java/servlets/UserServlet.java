@@ -20,7 +20,7 @@ public class UserServlet extends HttpServlet {
             } catch (Exception ex) {
                 Logger.getLogger(UserServlet.class.getName()).log(Level.SEVERE, null, ex);
             }
-        getServletContext().getRequestDispatcher("/WEB-INF/users.jsp");
+        getServletContext().getRequestDispatcher("/WEB-INF/users.jsp").forward(request,response);
     }
 
     @Override
@@ -73,7 +73,7 @@ public class UserServlet extends HttpServlet {
         } catch (Exception ex) {
             Logger.getLogger(UserServlet.class.getName()).log(Level.SEVERE, null, ex);
             }
-        getServletContext().getRequestDispatcher("/WEB-INF/users.jsp");
+        getServletContext().getRequestDispatcher("/WEB-INF/users.jsp").forward(request,response);
       
     }
 
